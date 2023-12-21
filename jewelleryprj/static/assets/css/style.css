@@ -91,3 +91,42 @@ i {
     font-family: Playfair Display, sans-serif;
     box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.623);
 }
+
+/* UPCOMING COLLECTION sesction */
+
+.upcoming-collection .container-fluid {
+    color: #fff;
+    font-family: Playfair Display, sans-serif;
+    display: inline-block;
+}
+
+.centered {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.up-coll h2 {
+    font-size: 100px;
+    padding-top: 200px; 
+}
+
+.up-coll h3 {
+    font-size: 80px;
+ }
+
+.up-coll h5 {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.countdown div {
+    display: inline-flex;
+    margin-top: 400px;
+}
+
+.countdown div p {
+    font-size: 60px;
+    padding-right: 20px;
+}
