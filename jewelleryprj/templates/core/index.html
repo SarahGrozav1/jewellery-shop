@@ -32,7 +32,7 @@
 
         <!-- Navigation Bar -->
 
-        <nav class="navbar navbar-expand-lg fixed-top bg-light" style="--bs-bg-opacity: .7; height: 100px;">
+        <nav class="navbar navbar-expand-lg bg-light" style="--bs-bg-opacity: .7; height: 100px;">
             <div class="container-fluid ">
                 <a class="navbar-brand fs-5" href="#home">Seline & Tam Jewellery</a>
 
@@ -82,11 +82,15 @@
 
         <section id="home">
             <img src="{% static 'assets/media/background.png' %}" alt="lady with gold necklace and pearls" class="masthead">
-                <div class="color-overlay d-flex justify-content-center align-items-center text-center">
+                
+                  <div class="container">
+                    <div class="color-overlay d-flex justify-content-center align-items-center text-center">
+                     
                     <h1>Your dream in </h1>
                     <h1><i>jewellery</i> form</h1>
-                    <p class=" pt-5">Sign in now for a discount of 15%!</p>
+                    <p class=" pt-5 lead col-sm-1">Sign in now for a discount of 15%!</p>
                     <a href="sign-in.html" class="btn btn-outline-dark p-4">Sign In Now</a>
+                  
                 </div>
             </div>
         </section>
@@ -141,7 +145,7 @@
               <div class="card mt-5 mb-5">
                 <img src="{% static 'assets/media/bg8.jpg' %}" alt="hand with jewellery" class="card-img-top">
                 <div class="card-body">
-                  <h2 class="card-title">JEWELRY CREATION </h2>
+                  <h2 class="card-title">JEWELLERY CREATION </h2>
                   <p class="card-text">Jewellery is crafted through a meticulous process.
                     Inspired by various sources, a designer sketches the desired piece.
                     Material selection is crucial, from precious metals to gemstones.
@@ -160,7 +164,7 @@
     <!-- UPCOMING COLLECTION section -->
 
       <section class="upcoming-collection">
-            <img src="{% static 'assets/media/jewelry-bg.png' %}" alt="lady wit earing">
+            <img src="{% static 'assets/media/jewelry-bg.png' %}" alt="lady wit earing" class="masthead">
               <div class="up-coll container-fluid ">
                 <div class="centered row">
                   <div class="col-lg-4 text-center">
@@ -193,6 +197,102 @@
               </div>
             </div>
           </section>
+
+           <!-- THEA COLLECTION section -->
+
+    <section class="thea-collection">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Thea Collection</h1>
+          <h3>On Sale Now!</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="product-box">
+              <div class="product-inner-box position-relative">
+                <div class="icons position-absolute">
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+                </div>
+                <div class="onsale">
+                  <span class="sale"> 25% </span>
+                </div>
+                <img src="{% static 'assets/media/1.png' %}" alt="earings" class="img-fluid">
+                <div class="cart-btn">
+                  <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-name">
+                  <h5>Yellow gold hoop earrings</h5>
+                </div>
+                <div class="product-price">
+                  Sheila $<span>170</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="product-box">
+              <div class="product-inner-box position-relative">
+                <div class="icons position-absolute">
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+                </div>
+                <div class="onsale">
+                  <span class="sale"> 30% </span>
+                </div>
+                <img src="{% static 'assets/media/2.png' %}" alt="earings" class="img-fluid">
+                <div class="cart-btn">
+                  <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-name">
+                  <h5>Gold loop earrings</h5>
+                </div>
+                <div class="product-price">
+                  Rhea $<span>260</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="product-box">
+              <div class="product-inner-box position-relative">
+                <div class="icons position-absolute">
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+                  <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+                </div>
+                <div class="onsale">
+                  <span class="sale"> 15% </span>
+                </div>
+                <img src="{% static 'assets/media/3.png' %}" alt="earings" class="img-fluid">
+                <div class="cart-btn">
+                  <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                    Cart</button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-name">
+                  <h5>Gold drop earrings</h5>
+                </div>
+                <div class="product-price">
+                  Diane $<span>200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
           
 
     </main>
