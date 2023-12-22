@@ -261,11 +261,3 @@ i {
     margin-bottom: 50px;
 }
 
-/* MEDIA QUERY */
-
-@media only screen and (max-width: 387px) {
-
-    .color-overlay p span{
-    
-    }
-}
