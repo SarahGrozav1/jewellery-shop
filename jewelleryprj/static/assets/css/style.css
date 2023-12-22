@@ -359,3 +359,16 @@ i {
     margin-bottom: 70px;
 }
 
+/* FOOTER */
+
+footer {
+    background: #D6CFCB;
+}
+
+hr {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 20px auto;
+}
+
