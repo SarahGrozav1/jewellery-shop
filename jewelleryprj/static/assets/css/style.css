@@ -261,3 +261,53 @@ i {
     margin-bottom: 50px;
 }
 
+/* OUR PROMISE */
+
+.promise {
+    background: #e2dede;
+    text-align: center;
+ }
+ 
+ /* top shape */
+ 
+ .custom-shape-divider-top-1701941803 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+ }
+ 
+ .custom-shape-divider-top-1701941803 svg {
+     position: relative;
+     display: block;
+     width: calc(135% + 1.3px);
+     height: 292px;
+ }
+ 
+ .custom-shape-divider-top-1701941803 .shape-fill {
+     fill: #D6CFCB;
+ }
+ 
+ /* top shape ends here */
+ 
+ .promise h1 {
+     font-family: Playfair Display, sans-serif;
+     padding-top: 200px;
+     padding-bottom: 80px;
+ }
+ 
+ .promise .icon {
+     font-family: Playfair Display, sans-serif;
+     padding-bottom: 80px;
+ }
+ 
+ .promise .big {
+     font-size: 5rem;
+    
+ }
+ 
+ .promise h5 {
+     font-size: 2rem;
+ }
