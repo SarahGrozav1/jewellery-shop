@@ -311,3 +311,51 @@ i {
  .promise h5 {
      font-size: 2rem;
  }
+
+ /* CONTACT section */
+
+#contact {
+    position: relative;
+    font-family: Playfair Display, sans-serif;
+    background: #D6CFCB;
+}
+
+/* curve */
+
+.custom-shape-divider-top-1701960121 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1701960121 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1701960121 .shape-fill {
+    fill: #E2DEDE;
+}
+
+/* curve ends here */
+
+#contact .bg-image {
+    width: 100%;
+    height: 500px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact h4 {
+    margin-top: 70px;
+}
+
+#contact h5 {
+    margin-bottom: 70px;
+}
+
