@@ -1,5 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
+from userauths.models import User
+
 
 #  Category model
 
@@ -27,11 +28,6 @@ class Product(models.Model):
 
 
 # Order model
-
-
-
-
-
 
 
 # Customer model
