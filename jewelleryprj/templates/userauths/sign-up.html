@@ -1,7 +1,19 @@
-<form action="">
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm Password">
-    <button>Register</button>
-</form>
+{% extends 'partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section id="sign-up">
+    <img src="{% static 'assets/media/collections/dione7.jpg' %}" alt="" class="card-img-top">
+
+<form action="" method=" POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+    <button type="submit">Register</button>
+    </form>
+
+    <img src="{% static 'assets/media/collections/dione8.jpg' %}" alt="" class="card-img-top">
+</section>
+{% endblock content %}
