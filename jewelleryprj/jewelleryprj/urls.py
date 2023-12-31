@@ -19,11 +19,15 @@ from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
+from userauths.views import render_login
+from userauths.views import perform_login
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("core.urls")),
-    path("user/", include("userauths.urls")),
+    path("sign-up/", render_login, name="sign-up"),
+    path("dashboard/", perform_login, name="dashboard"),
 ]
 
 if settings.DEBUG:
