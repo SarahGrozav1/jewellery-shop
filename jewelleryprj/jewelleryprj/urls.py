@@ -23,6 +23,7 @@ from userauths.views import render_login
 from userauths.views import perform_login
 
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("core.urls")),

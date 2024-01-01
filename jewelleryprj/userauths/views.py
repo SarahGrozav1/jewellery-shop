@@ -9,7 +9,6 @@ from django.urls import reverse
 
 # from django.contrib.auth.views import LoginView
 
-# Create your views here.
 
 def render_login(request):
     return render(request, "userauths/sign-up.html/")
@@ -25,16 +24,16 @@ def perform_login(request):
         user_obj = authenticate(request, username=username, email=email, password1=password1, password2=password2)
         if user_obj is not None:
             login(request, user_obj)
-            return HttpResponseRedirect(reverse("dashboard"))
+            return HttpResponseRedirect(reverse("core/dashboard"))
         else:
-            return HttpResponseRedirect("admin")
+            return render(request, "userauths/sign-up.html/")
         
 def dashboard(request):
-    return render(request, "dashboard")
+    return render(request, "core/dashboard.html")
 
 def perform_logout(request):
     logout(request)
-    return HttpResponseRedirect("userauths/sign-up.html")
+    return render(request, "userauths/sign-up.html/")
 
 # class CustomLoginView(LoginView):
 #     template_name = 'base'
