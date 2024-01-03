@@ -3,11 +3,11 @@ from django.http.response import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.urls import reverse
 # from userauths.forms import UserRegisterForm
-# from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate
 from django.contrib import messages
 # from django.shortcuts import redirect
 
-# from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView
 
 
 def render_login(request):
@@ -37,8 +37,8 @@ def perform_logout(request):
     logout(request)
     return render(request, "userauths/sign-up.html/")
 
-# class CustomLoginView(LoginView):
-#     template_name = 'base'
+class CustomLoginView(LoginView):
+    template_name = 'base'
 
 # def register_view(request):
 
@@ -47,12 +47,12 @@ def perform_logout(request):
 #         if form.is_valid():
 #             new_user = form.save()
 #             username = form.cleaned_data.get("username")
-            # messages.success(request, f'Hey {username}, your account was created successfully!')
+#             messages.success(request, f'Hey {username}, your account was created successfully!')
 #             new_user = authenticate(username=form.cleaned_data['email'], 
 #                                     password=form.cleaned_data['password1']
 #             )
 #             login(request, new_user)
-#             return redirect("core:index")
+#             return render(request, "userauths/sign-up.html/")
         
 #     else:
 #         form = UserRegisterForm()
